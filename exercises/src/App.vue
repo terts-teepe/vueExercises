@@ -21,6 +21,18 @@
       <hr></hr>
       <exercise-Five></exercise-Five>
       <hr></hr>
+      <p>Excercise 6 + 7:</p>
+      <hr></hr>
+      <template>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+                <app-user></app-user>
+            </div>
+          </div>
+        </div>
+      </template>
+      <hr></hr>
       <p>Excercise 9:</p>
       <hr></hr>
       <exercise-Nine></exercise-Nine>
@@ -34,6 +46,7 @@ import exerciseThree from './exerciseThree.vue';
 import exerciseFour from './exerciseFour.vue';
 import exerciseFive from './exerciseFive.vue';
 import exerciseNine from './exerciseNine.vue';
+import User from './exerciseSixAndSeven/User.vue';
 
 
 export default {
@@ -43,11 +56,15 @@ export default {
     'exercise-Three': exerciseThree,
     'exercise-Four': exerciseFour,
     'exercise-Five': exerciseFive,
-    'exercise-Nine': exerciseNine
+    'exercise-Nine': exerciseNine,
+    'appUser': User
   }
 }
 </script>
 
 <style>
-
+    div.component {
+        border: 1px solid black;
+        padding: 30px;
+    }
 </style>
