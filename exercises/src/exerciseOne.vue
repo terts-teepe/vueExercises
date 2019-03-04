@@ -10,8 +10,9 @@
         <div>
             <img v-bind:src="image" style="width:100px;height:100px">
         </div>
+        <br></br>
         <!-- 5) Pre-Populate this input with your name (set the "value" attribute) -->
-          <input type="text" v-bind:value="firstName">
+        <input type="text" v-bind:value="firstName">
     </div>
 </template>
 
