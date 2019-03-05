@@ -25,6 +25,21 @@
       <hr></hr>
       <template>
         <div class="container">
+          <app-header></app-header>
+          <hr>
+          <div class="row">
+              <servers></servers>
+              <app-server-details></app-server-details>
+          </div>
+          <hr>
+          <app-footer></app-footer>
+        </div>
+      </template>
+      <hr></hr>
+      <p>Excercise 8:</p>
+      <hr></hr>
+      <template>
+        <div class="container">
           <div class="row">
             <div class="col-xs-12">
                 <app-user></app-user>
@@ -45,9 +60,12 @@ import exerciseTwo from './exerciseTwo.vue';
 import exerciseThree from './exerciseThree.vue';
 import exerciseFour from './exerciseFour.vue';
 import exerciseFive from './exerciseFive.vue';
+import Header from './excerciseSixAndSeven/Shared/Header.vue';
+import Footer from './excerciseSixAndSeven/Shared/Footer.vue';
+import Servers from './excerciseSixAndSeven/Server/Servers.vue';
+import ServerDetails from './excerciseSixAndSeven/Server/ServerDetails.vue';
+import User from './exerciseEight/User.vue';
 import exerciseNine from './exerciseNine.vue';
-import User from './exerciseSixAndSeven/User.vue';
-
 
 export default {
   components: {
@@ -57,7 +75,11 @@ export default {
     'exercise-Four': exerciseFour,
     'exercise-Five': exerciseFive,
     'exercise-Nine': exerciseNine,
-    'appUser': User
+    'appUser': User,
+    'appHeader': Header,
+    Servers,
+    'app-server-details': ServerDetails,
+    'app-footer': Footer
   }
 }
 </script>
